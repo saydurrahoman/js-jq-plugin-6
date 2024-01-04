@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery-3</title>
+    <!-- style.css linking here -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- boxicon link-->
+</head>
+<body>
+    
+   <section class="aria">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="filter">
+            <a href="#" class="btn btn-info" data-filter="all">all</a>
+            <a href="#" class="btn btn-info" data-filter=".webdesign">web design</a>
+            <a href="#" class="btn btn-info" data-filter=".webd">web development</a>
+            <a href="#" class="btn btn-info" data-filter=".graphicd">graphic design</a>
+            <a href="#" class="btn btn-info" data-filter=".wp">wordpress</a>
+          </div>
+        </div>
+      </div>
+      <!-- images start -->
+      <div class="row porfolio">
+        <div class="col-lg-4">
+          <div class="item mix custo_class webdesign graphicd wp">
+            <img src="image/moon-2.jpg" alt="saydur" class="w-100">
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="item mix custo_class webdesign graphicd wp">
+            <img src="image/laptop-3.jpg" alt="saydur" class="w-100">
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="item mix custo_class webdesign  wp">
+            <img src="image/laptop-1.jpg" alt="saydur" class="w-100">
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="item mix custo_class graphicd wp">
+            <img src="image/forest-3.jpg" alt="saydur" class="w-100">
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="item mix custo_class webd webdesign graphicd wp">
+            <img src="image/forest-2.jpg" alt="saydur" class="w-100">
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="item mix custo_class webdesign  wp">
+            <img src="image/bird-2.jpg" alt="saydur" class="w-100">
+          </div>
+        </div>
+
+      </div>
+    </div>
+   </section>
+  
+
+  <!-- js linking here -->
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    var mixer = mixitup('.porfolio');
+
+    var mixer = mixitup(containerEl, {
+    selectors: {
+        target: '.blog-item'
+    },
+    animation: {
+        duration: 3000
+    }
+});
+  </script>
+</body>
+</html>

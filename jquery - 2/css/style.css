@@ -1,0 +1,17 @@
+.filter{
+    text-align: center;
+    background-color: #eee;
+    padding: 30px;
+    margin: 20px 0;
+}   
+
+img{
+    width: 100%;
+}
+.custo_class img{
+    height: 100%;
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
